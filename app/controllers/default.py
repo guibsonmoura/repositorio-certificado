@@ -1,9 +1,7 @@
-
-import json
-from flask import request,session,send_from_directory
+from flask import request,send_from_directory
 from pathlib import Path
-from app import app, db
-from app.models.tables import User
+from app import app
+
 import os
 
 
