@@ -7,6 +7,11 @@ from app.models.tables import User
 import os
 
 
+@app.route("/")
+def home():
+    return 'funcionando'
+
+
 @app.route("/certificado",methods=['GET', 'POST'])
 def index():
     print(request.method)
