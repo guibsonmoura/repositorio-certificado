@@ -7,7 +7,7 @@ import os
 
 
 @app.route("/")
-@cross_origin()
+
 def home():
     return 'funcionando'
 
