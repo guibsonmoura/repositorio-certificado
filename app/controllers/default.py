@@ -1,16 +1,19 @@
 from flask import request,send_from_directory
 from pathlib import Path
+from flask_cors import cross_origin
 from app import app
 
 import os
 
 
 @app.route("/")
+@cross_origin()
 def home():
     return 'funcionando'
 
 
 @app.route("/certificado",methods=['GET', 'POST'])
+@cross_origin()
 def index():
     print(request.method)
 
